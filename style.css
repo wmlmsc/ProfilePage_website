@@ -2,18 +2,29 @@
     padding: 0;
     margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: black;
     color: aliceblue;
-    height: 400px;
+    height: 650px;
+    position: relative;
 }
 
 .navigation {
+    position: fixed;
+    width: 100%;
+    background-color: black;
     display: flex;
     justify-content:right;
     padding-right: 80px;
     padding-top: 15px;
+    padding-bottom: 10px;
     font-size: 20px;
+    z-index: 100;
 }
 
 .navigation a{
@@ -25,21 +36,23 @@ header {
 
 .navigation a:hover {
     color: gray;
+    transition: color 0.2s;
 }
 
 .title {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 90px;
+    padding-top: 150px;
     padding-bottom: 30px;
 }
 
 .title h1{
+    font-weight: bolder;
     font-family: "Inter Tight", sans-serif;
-    padding-bottom: 35px;
+    padding-bottom: 85px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 500;
 
 }
@@ -47,9 +60,218 @@ header {
 .title h2 {
     font-family: "Caveat", cursive;
     color: mediumspringgreen;
-    font-size: 55px;
+    font-size: 70px;
     font-weight: 400;
     font-style: normal;
     font-optical-sizing: auto;
 
 }
+
+.social-links {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    bottom: 200px;
+}
+.social-icons {
+    padding-bottom: 10px;
+}
+
+.social-icons img:hover {
+    filter: invert(56%) sepia(88%) saturate(455%) hue-rotate(93deg);
+}
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    min-height: 650px;
+}
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.about-block h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    display: flex;
+}
+
+.about-block h3 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    color: mediumspringgreen;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+.about-block img{
+    object-fit: cover;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 5%;
+}
+
+.about-title {
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: mediumspringgreen;
+}
+
+.about-text {
+    font-size: 23px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.middle-navigate {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    background-color: rgb(28, 28, 28);
+    min-height: 350px;
+}
+
+.middle-navigate img{
+    color: white;
+    background-color: mediumspringgreen;
+    object-fit: cover;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 25px;
+    
+}
+
+.middle-navigate h4{
+    font-family: "PT Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.middle-navigate p{
+    text-align: center;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.middle-navigate a{
+    text-decoration: none;
+    color: mediumspringgreen;
+    font-family: "Inter Tight", sans-serif;
+}
+
+.middle-navigate a:hover {
+    color: rgb(4, 168, 105);
+    transition: color 0.2s;
+}
+
+.middle-navigate-skills,
+.middle-navigate-experience,
+.middle-navigate-portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 450px;
+    padding-top: 25px;
+}
+
+.skills-info {
+    font-size: 18px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-info h2 {
+    font-family: "PT Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.skills-stickers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    align-items: center;
+    
+}
+
+.skills-stickers-first-row,
+.skills-stickers-second-row  {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 60px;
+}
+
+.skills-stickers-html,
+.skills-stickers-css,
+.skills-stickers-js-react,
+.skills-stickers-js-angular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+

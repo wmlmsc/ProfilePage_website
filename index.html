@@ -5,17 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ProfilePage</title>
         <link rel="icon" href="/project1_ProfilePage/images/favicon.png">
-        <link rel="stylesheet" href="/project1_ProfilePage/style.css">
+
+        <link rel="stylesheet" href="/style.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter+Tight:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        
+
     </head>
     <body>
         <header>
             <nav class="navigation">
-                
-                <a href="#">About</a>
-                <a href="#">Skills</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
                 <a href="#">Experience</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Contact</a>
@@ -26,12 +37,100 @@
             </div>
             <div class="social-links">
                 <a href="https://t.me/wmlmsc" target="_blank" class="social-icons">
-                    <i class="fa-brands fa-telegram"></i>
+                    <img src="images/icons/icons8-telegram-50.png" alt="telegram">
                 </a>
                 <a href="https://vk.ru/dj_wamel" target="_blank" class="social-icons">
-                    <i class="fa-brands fa-vk"></i>
+                    <img src="images/icons/icons8-vk-circled-50.png" alt="vk">
+                </a>
+                <a href="https://www.instagram.com/wmlmsc/" target="_blank" class="social-icons">
+                    <img src="images/icons/icons8-instagram-50.png" alt="instagram">
+                </a>
+                <a href="https://github.com/drogulyov-cmyk" target="_blank" class="social-icons">
+                    <img src="/images/icons/icons8-github-logo-50.png" alt="github">
                 </a>
             </div>
         </header>
+        <main>
+            <div class="about" id="about">
+                <div class="about-info">
+                    <h2 class="about-title">A man of many talents.</h2>
+                    <div class="about-text">
+                        <p>
+                            Я системный администратор, который однажды понял, что просто поддерживать
+                            чужие системы — мало. Мне захотелось создавать. Так началось моё погружение
+                            в мир frontend-разработки: JavaScript, React, логика алгоритмов — шаг за шагом,
+                            день за днём, по 3–4 часа в сутки, несмотря на то, что английский пока не родной,
+                                а опыта в программировании почти не было.<br><br>
+                            Я ещё в пути к своему первому офферу frontend-разработчика — и дал себе на это пять
+                            месяцев. Но для меня разработка — это не строчки кода ради строчек кода. Это чистый лист
+                            интерфейса, который я учусь наполнять логикой и формой, превращая идею в то, с чем можно взаимодействовать.<br><br>
+                            «Я не эксперт — пока. Но я — тот, кто выбрал холст и уже держит кисть в руках».
+                        </p>
+                    </div>
+                </div>
+                <div class="about-block">
+                        <h2>Based in Moscow</h2>
+                        <h3>20 years old</h3>
+                        <img src="/images/profilePhoto.jpg" alt="My Photo">
+                </div>
+            </div>
+            <div class="middle-navigate">
+                <div class="middle-navigate-skills">
+                    <img src="/images/icons/smile.svg" alt="smile">
+                    <h4>Skills</h4>
+                    <p>Узнайте о моих навыках программирования, найдите информацию о моих знаниях языков программирования и многое другое.</p>
+                    <a href="#skills">Learn more ></a>
+                </div>
+                <div class="middle-navigate-experience">
+                    <img src="/images/icons/star.svg" alt="star">
+                    <h4>Experince</h4>
+                    <p>Узнайте о хронологии моего образования и получите дополнительную информацию о моем опыте работы.</p>
+                    <a href="#">Learn more ></a>
+                </div>
+                <div class="middle-navigate-portfolio">
+                    <img src="/images/icons/buisness_bag.svg" alt="bag">
+                    <h4>Portfolio</h4>
+                    <p>Моё портфолио — моя главная гордость. Ознакомьтесь с моими предыдущими работами и лучше оцените мои навыки.</p>
+                    <a href="#">Learn more ></a>
+                </div>
+            </div>
+            <div class="skills" id="skills">
+                <div class="skills-info">
+                    <h2>Programming skills</h2>
+                    <p>
+                        Начинающий frontend-разработчик, верящий в силу веб-разработки. Пришёл в неё из системного 
+                        администрирования и сейчас прохожу путь через основы HTML, CSS и JavaScript к первому офферу.<br> 
+                        Уделяю особое внимание семантической вёрстке, чистой структуре кода и адаптивности. 
+                        Параллельно изучаю, как устроена цифровая индустрия изнутри — от сетей и процессов 
+                        до принципов работы браузера — чтобы понимать не только «как», но и «почему». 
+                        Мне интересно постоянно пробовать новое и разбираться в вещах глубже поверхностного уровня.<br>
+                        Также подтягиваю английский язык, без которого сложно читать техническую документацию 
+                        и не отставать от индустрии.
+                    </p>
+                </div>
+                <div class="skills-stickers">
+                    <div class="skills-stickers-first-row">
+                        <div class="skills-stickers-html">
+                            <h2>HTML</h2>
+                            <h3>Html4/Html5</h3>
+                        </div>
+                        <div class="skills-stickers-css">
+                            <h2>CSS3</h2>
+                            <h3>SASS/LESS</h3>
+                        </div>
+                    </div>
+                    <div class="skills-stickers-second-row">
+                        <div class="skills-stickers-js-react">
+                            <h2>JS</h2>
+                            <h3>React JS</h3>
+                        </div>
+                        <div class="skills-stickers-js-angular">
+                            <h2>JS</h2>
+                            <h3>Angular JS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
