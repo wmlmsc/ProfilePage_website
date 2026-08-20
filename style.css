@@ -120,8 +120,6 @@ header {
 
 }
 
-
-
 .about-block img{
     object-fit: cover;
     height: 450px;
@@ -133,18 +131,19 @@ header {
 .about-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     padding-right: 10%;
     padding-left: 5%;
 }
 
 .about-title {
-    font-size: 50px;
-    padding-bottom: 30px;
     font-family: "PT Serif", serif;
-    font-weight: 400;
+    font-weight: 900;
     font-style: normal;
+    font-size: 45px;
     color: mediumspringgreen;
+    margin-bottom: 60px;
 }
 
 .about-text {
@@ -222,20 +221,21 @@ header {
 
 .skills {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-    min-height: 450px;
+    min-height: 550px;
     padding-top: 25px;
 }
 
 .skills-info {
-    font-size: 18px;
+    font-size: 23px;
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    margin-right: 30%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -250,28 +250,71 @@ header {
 }
 
 .skills-stickers {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    align-items: center;
-    
-}
-
-.skills-stickers-first-row,
-.skills-stickers-second-row  {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px 40px;
     justify-content: center;
-    gap: 100px;
-    margin-bottom: 60px;
-}
-
-.skills-stickers-html,
-.skills-stickers-css,
-.skills-stickers-js-react,
-.skills-stickers-js-angular {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
+
+
+.skills-stickers-html h2,
+.skills-stickers-css h2,
+.skills-stickers-js-react h2,
+.skills-stickers-js-angular h2{
+    color: mediumspringgreen;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    
+}
+
+.skills-stickers-html h3,
+.skills-stickers-css h3,
+.skills-stickers-js-react h3,
+.skills-stickers-js-angular h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(65, 65, 65);
+}
+
+.lang {
+    background-color: rgb(28, 28, 28);
+    min-height: 300px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lang-title {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: "PT Serif", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.lang-text {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+}
+
+.lang-rus h3,
+.lang-eng h3 {
+    font-size: 35px;
+    color: mediumspringgreen;
+}
+
+.lang-rus h4,
+.lang-eng h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
